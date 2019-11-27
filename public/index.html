@@ -12,10 +12,65 @@
     <meta name="copyright" content="Vũ Đức Cường" />
     <meta name="author" content="Vũ Đức Cường" />
     <link rel="icon" type='image/x-icon' href="favicon.ico">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "vuduccuong-ck48.web.app",
+            "name": "Hello, World",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+84-343-338-2777",
+                "contactType": "Customer service"
+            }
+        }
+    </script>
 </head>
 
 <body>
     <h1>Hello, World!</h1>
+
+    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button> -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '501919717260669',
+                cookie: true,
+                xfbml: true,
+                version: 'v4.0'
+            });
+
+            FB.AppEvents.logPageView();
+
+            FB.getLoginStatus(function(response) {
+                debugger;
+                if (response) {
+                    console.log("response: ", response);
+                }
+            });
+
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        function checkLoginState() {
+            FB.getLoginStatus(function(response) {
+                console.log("Get status response: ", response);
+            });
+        }
+    </script>
+
+
 </body>
 
 </html>

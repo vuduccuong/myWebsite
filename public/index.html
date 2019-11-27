@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Hello, World!</title>
+    <title>For DucMx</title>
     <meta name="description" content="Vũ Đức Cường" />
     <meta name="keywords" content="cuongvd" />
     <meta name="copyright" content="Vũ Đức Cường" />
@@ -25,52 +25,23 @@
             }
         }
     </script>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vuduccuong.ml/" />
+    <meta property="og:title" content="Mai Xuân Đức và Những Người Bạn Làm Vlogs | CuongVjpPro" />
+    <meta property="og:description" content="Ngày xửa ngày xưa, ở một quốc gia Nam Định, có gia tộc họ Mai. Cho đến năm 2019, cháu đích tôn nhà họ Mai là Mai Xuân Đức, rất ư là VipPro" />
+    <meta property="og:image" content="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/20374258_670328809822575_3044699575134408899_n.jpg?_nc_cat=100&_nc_ohc=Vua24zXtGdIAQm84RvOELJKI3Csp8PX13IDuTE5rYKjtn8clrMTNeUpQQ&_nc_ht=scontent.fhan2-4.fna&oh=8903cb683b61b69bb174ddb62890c223&oe=5E49DD87" />
+
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
+<!--App-->
+<div id="c-root"></div>
+<!--End App-->
 
-    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button> -->
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId: '501919717260669',
-                cookie: true,
-                xfbml: true,
-                version: 'v4.0'
-            });
-
-            FB.AppEvents.logPageView();
-
-            FB.getLoginStatus(function(response) {
-                debugger;
-                if (response) {
-                    console.log("response: ", response);
-                }
-            });
-
-        };
-
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {
-                return;
-            }
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
-        function checkLoginState() {
-            FB.getLoginStatus(function(response) {
-                console.log("Get status response: ", response);
-            });
-        }
-    </script>
-
-
+<!--Script-->
+<script async defer src="./ClientApp/Dist/index/index_bundle.js"></script>
+<!--End Script-->
 </body>
 
 </html>
